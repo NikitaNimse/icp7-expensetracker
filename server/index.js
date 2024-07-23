@@ -4,8 +4,8 @@ import cors from 'cors';
 import dotenv from 'dotenv';
 dotenv.config();
 
-const app=express();
-app.use(express.json);
+const app =express()
+app.use(express.json())
 app.use(cors());
 
 //connection to mongodb
@@ -29,10 +29,10 @@ app.get('/',(req,res)=>{
 })
 
 
-const PORT=process.env.PORT || 8000;
 
-app.listen(PORT, ()=> {
-    console.log(`server is running on port${PORT}`);
+
+
+const PORT = process.env.PORT;
+app.listen(PORT,()=>{{}
+console.log(`Server is running on port ${PORT}`)
 })
-
-
