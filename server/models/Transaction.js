@@ -15,7 +15,7 @@ const transactionSchema =new Schema({
  },
  type: {
     type:String,
-    required:true
+    enum:["debit" , "credit"]
  },
  user: {
     type:Schema.Types,objectId,
@@ -23,6 +23,6 @@ const transactionSchema =new Schema({
  }
 });
 
-const User =model("User", userSchema);
+const User =model("Transaction", userSchema);
 
-export default User; 
+export default Transaction; 
