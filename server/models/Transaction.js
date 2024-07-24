@@ -1,28 +1,33 @@
-import { Schema ,model } from "mongoose";
+import { Schema, model } from "mongoose"
 
-//credit:money comes in
-//debit:money goes out
 
-const transactionSchema =new Schema({
- amount: {
-    type:Number,
-    required:true
- },
- category: {
-    type:String,
-    default:"others"
-   
- },
- type: {
-    type:String,
-    enum:["debit" , "credit"]
- },
- user: {
-    type:Schema.Types,objectId,
-    ref:"User",
- }
+
+const transactionSchema = new Schema({
+    title: {
+        type: String,
+        required: true,
+    },
+    amount: {
+        type: Number,
+        required: true,
+    },
+    category: {
+        type: String,
+        default: "others",
+
+    },
+    type: {
+        type: String,
+        enum:["debit","credit"],
+    },
+    user: {
+        type: Schema.Types.ObjectId,
+        ref: "User",
+        required:true
+    }
+}, {
+    timestamps: true,
 });
 
-const User =model("Transaction", userSchema);
-
-export default Transaction; 
+const Transaction = model("Transaction", transactionSchema);
+export default Transaction;
