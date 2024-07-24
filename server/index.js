@@ -36,7 +36,7 @@ app.post("/signup" , async(req,res)=>{
   fullname:fullname,
   email:email,
   password:password,
-  dob:dob
+  dob:new Date (dob)
  })
 
  try{
