@@ -2,7 +2,7 @@ import express from 'express';
 import mongoose from 'mongoose';
 import cors from 'cors';
 import dotenv from 'dotenv';
-import {posttransaction} from './controllers/transaction.js';
+import {posttransaction , gettransaction} from './controllers/transaction.js';
 import { postsignup , postlogin } from './controllers/user.js';
 
 dotenv.config();
@@ -37,6 +37,8 @@ app.post("/signup" ,  postsignup)
 app.post("/login" , postlogin)
 
 app.post ("/transaction" , posttransaction)
+
+app.get ("/transactions" , gettransaction)
 
 const PORT = process.env.PORT;
 app.listen(PORT,()=>{{}
