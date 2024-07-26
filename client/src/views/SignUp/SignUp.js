@@ -1,14 +1,38 @@
 import "./SignUp.css"
+import axios from 'axios'
+import toast, {Toaster} from 'react-hot-toast'
 
 import React, { useState } from 'react'
 
 function SignUp() {
     const [user, setUser] = useState({
-        fullName: '',
+        fullname: '',
         email: '',
         password: '',
         dob: ''
       })
+      const signup = async () => {
+        const response = await axios.post(`${process.env.REACT_APP_bACKEND_URL}/signup`, {
+          fullname: user.fullname,
+          email: user.email,
+          password: user.password,
+          dob: user.dob
+        })
+    
+        if(response.data.success){
+          toast.success(response.data.message)
+    
+          setUser({
+            fullName: '',
+            email: '',
+            password: '',
+            dob: ''
+          })
+        }
+        else{
+          toast.error(response.data.message)
+        }
+      }
   
 
   return (
@@ -47,13 +71,13 @@ function SignUp() {
           onChange={(e)=>setUser({...user, dob: e.target.value})}
           />
 
-        <button type="button" className="form-btn">Register Now </button>
+        <button type="button" onClick={signup} className="form-btn">Register Now </button>
 
         </form>
                  
 
       
-        
+        <Toaster />
         
         </div>
   )
