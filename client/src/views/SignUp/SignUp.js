@@ -39,8 +39,10 @@ function Signup() {
 
   return (
     <div className='signup-form'>
-      <h2>User Registration</h2>
-
+    
+    <h2 className='heading'>User Registration</h2>
+         
+   
       <form >
         <input
           type="text"
@@ -87,6 +89,9 @@ function Signup() {
 
       <Toaster />
     </div>
+
+   
+   
   )
 }
 

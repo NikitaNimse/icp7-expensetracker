@@ -4,9 +4,9 @@ body{
 }
 .heading{
     text-align: center;
-    color: #c698fe;
-
-}
+    margin: 10px;
+    color:black;
+  }
 
 .signup-form{
     border: 2px double black;

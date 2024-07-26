@@ -1,0 +1,29 @@
+
+body{
+    background-color: rgb(236, 238, 240);
+}
+.heading{
+    text-align: center;
+    margin: 10px;
+    color:black;
+  }
+
+.login-form{
+    border: 2px double black;
+    
+    width: 300px;
+    height: 300px;
+    justify-content: center;
+    display: block;
+    border-radius: 5%;
+    margin: 50px;
+    margin-left: 600px;
+   
+    padding: 5px;
+
+    background-color: #c4bbfa;
+   /* background-color: rgb(178, 215, 243);*/
+}
+.sbtn{
+    margin:15px;
+}
