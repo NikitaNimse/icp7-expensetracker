@@ -33,10 +33,11 @@ function Login() {
   return (
 
     <div>
+      <h2 className='heading'>User Login</h2>
          
     <div className="login-form">
       
-    <h2 className='heading'>User Login</h2>
+    
 
       <form >
         <input

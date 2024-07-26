@@ -38,12 +38,13 @@ function Signup() {
 
 
   return (
+    <div>
+
+      <h2 className='heading'>User Registration</h2>
+
     <div className='signup-form'>
-    
-    <h2 className='heading'>User Registration</h2>
-         
-   
-      <form >
+      
+  <form >
         <input
           type="text"
           placeholder="Fullname"
@@ -88,6 +89,7 @@ function Signup() {
       <Link to='/login'>Already have an account? Login</Link>
 
       <Toaster />
+    </div>
     </div>
 
    

@@ -1,10 +1,10 @@
 
 body{
-    background-color: rgb(236, 238, 240);
+   /* background-color: rgb(236, 238, 240);*/
 }
 .heading{
     text-align: center;
-    margin: 10px;
+    margin-top: 80px;
     color:black;
   }
 
@@ -12,7 +12,7 @@ body{
     border: 2px double black;
     
     width: 300px;
-    height: 300px;
+    height: 260px;
     justify-content: center;
     display: block;
     border-radius: 5%;
