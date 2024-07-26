@@ -10,6 +10,7 @@ import{
  import Home from './views/Home/Home';
  import Login from './views/Login/Login';
  import SignUp from './views/SignUp/SignUp';
+ import AddTransaction from "./views/AddTransaction/AddTransaction";
 
 
 
@@ -27,6 +28,10 @@ import{
         path:"/signup",
         element:<SignUp/>
     },
+    {
+        path: '/add-transaction',
+        element: <AddTransaction />
+      },
 
 
 

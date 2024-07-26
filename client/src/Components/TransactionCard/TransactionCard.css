@@ -10,18 +10,18 @@
   
   .transaction-card-title{
     margin: 0;
-    font-size: 30px;
+    font-size: 25px;
   }
   
   .transaction-card-amount{
     position: absolute;
     right: 10px;
     top: 10px;
-    font-size: 25px;
+    font-size: 20px;
   }
   
   .transaction-card-date{
-    font-size: 25px;
+    font-size: 20px;
   }
   
   .transaction-card-category{

@@ -114,8 +114,8 @@ function Home() {
 </div>
 
 
-      <div className='transactions-container'>
-        {
+<div className='transactions-container'>
+    {
           transactions.map((transaction) => {
             const {_id, title, amount, category, type, createdAt} = transaction
 
