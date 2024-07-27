@@ -46,7 +46,7 @@ function AddTransaction() {
   return (
     <div>
         <h3 className="auth-heading">
-          Add Transaction For {user.fullName}
+          Add Transaction For {user.fullname}
         </h3>
 
       <form className="auth-form">
